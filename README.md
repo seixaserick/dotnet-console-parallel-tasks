@@ -1,16 +1,16 @@
 # Context
 Sometimes we can call independent parallel tasks to process many things at same time.
-The program is finished when the last tasks are completed.
+The program finishes when all tasks are completed.
 You just need to wait for all tasks completition before return final results.
 
-Multi-threading applications with many parallel tasks sometimes can quickly reach a memory stack overflow.
+**Important:** Multi-threading applications with many parallel tasks sometimes can quickly reach a memory stack overflow. In this app you can see and monitor how many memory the app is allocating, a sample memory cleaning but it do not prevent stack overflow error. Try it!
 
 # What does this application do?
-- Ask how many parallel taks do you want to run (from 2 up to 10.000 heavy tasks)
-- Run these tasks where each thread do a heavy work with high memory use (big string concatenations)
-- Shows the execution time, bytes created in memory on HeavyWork procedure and let you see memory usage (windows task manager) before memory cleaning.
+- The app asks how many parallel tasks the user you want to run (from 2 up to 10.000 heavy tasks)
+- Then, it runs these tasks where each thread do a heavy work with high memory use (big string concatenations)
+- Shows the execution time, bytes created in memory and let you see memory usage (windows task manager or htop on Linux) before memory cleaning.
 - Order Garbage Collector to free up the used memory by these HeavyWork tasks 
-- Ask if you want to run or quit the program
+- Ask if you want to run again the app or if you want to quit the program
 
 
 # Stack and main topics in the project
@@ -32,8 +32,9 @@ Multi-threading applications with many parallel tasks sometimes can quickly reac
 
 ##About the Author and licence
 - Erick S. is a Senior Backend Developer and Architect. 
-- You can reach Erick by email <seixaserick77@gmail.com> or Linkedin <https://www.linkedin.com/in/seixaserick/>
-- More Github projects: <https://github.com/seixaserick/>
+- You can reach **Erick S.** by email <seixaserick77@gmail.com> or Linkedin <https://www.linkedin.com/in/seixaserick/>
+- Other Github Repositories: <https://github.com/seixaserick/>
+- MIT License (please check LICENSE.txt for more details)
 
 
 
