@@ -81,7 +81,7 @@ docker rm --force dotnet-console-parallel-tasks
 
 > After clone the repository you can open the project with Visual Studio, build and debug it.
 
-### To compile and run it in Windows (Visual Studio required)
+## To compile and run it in Windows (Visual Studio required)
 > Open the solution file (*dotnet-console-parallel-tasks.sln*) with your Visual Studio, then press **F5** to run the project!
 
 
