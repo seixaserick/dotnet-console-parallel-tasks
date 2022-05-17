@@ -6,12 +6,12 @@ You just need to wait for all tasks completition before return final results.
 **Important:** Multi-threading applications with many parallel tasks sometimes can quickly reach a memory stack overflow. In this app you can see and monitor how many memory the app is allocating, a sample memory cleaning but it do not prevent stack overflow error. Try it!
 
 # What does this application do?
-- The app asks how many parallel tasks the user you want to run (from 2 up to 10.000 heavy tasks)
-- Then, it runs these tasks where each thread do a heavy work with high memory use (big string concatenations)
-- Shows the execution time, bytes created in memory and let you see memory usage (windows task manager or htop on Linux) before memory cleaning.
-- Order Garbage Collector to free up the used memory by these HeavyWork tasks 
+- The app asks how many parallel tasks the user you want to run (2 up to 10.000 heavy tasks)
+- Then, it runs these many tasks where each thread does a heavy work with high memory use (big string concatenations)
+- After await all tasks completition, it shows the execution time, bytes created in memory and let you see memory usage (windows task manager or htop on Linux)
 - Ask if you want to run again the app or if you want to quit the program
-
+- If you choose to run again, the Garbage Collector is called, memory is cleaned and it waits next tasks quantity to run again (this is a good moment to check the memory allocation decreasing)
+ 
 
 # Stack and main topics in the project
 - .NET 6.0 console application
