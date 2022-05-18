@@ -108,9 +108,9 @@ docker rm --force dotnet-console-parallel-tasks
     - Go to containers list
     - Click on ```dotnet-console-parallel-tasks``` container
     - Open the container bash.
-    - Update container dependencies running ```apt-get update```
-    - Upgrade container dependencies running ```apt-get upgrade```
-    - Run ```apt-get install htop``` to install **htop**
+    - Update container dependencies running ```apt update```
+    - Upgrade container dependencies running ```apt upgrade```
+    - Run ```apt install htop``` to install **htop**
     - Run ```htop``` to open **htop**  (*It's like Windows Task Manager*) 
     - Run the container on your Windows Prompt ```docker run -it --name=dotnet-console-parallel-tasks dotnet-console-parallel-tasks``` and see in ```htop``` the memory and CPU increase when you request 9.999 parallel tasks
 
