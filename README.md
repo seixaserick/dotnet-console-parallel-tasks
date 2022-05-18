@@ -63,6 +63,9 @@ docker build -t dotnet-console-parallel-tasks -f Dockerfile .
 ## Running the app in a docker container
 
 
+![container running](./img/docker-desktop-cli.png "Docker Desktop with container running and CLI access")
+
+
 To run the image in Docker container and interact with it, run command line below: 
 ```
 docker run -it --name=dotnet-console-parallel-tasks --restart=unless-stopped dotnet-console-parallel-tasks
@@ -77,6 +80,11 @@ To remove the container (even if it is running), run command line below:
 ```
 docker rm --force dotnet-console-parallel-tasks
 ```
+
+
+
+
+
 
 # How to build and run without Docker (Windows)
 
