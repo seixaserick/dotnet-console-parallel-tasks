@@ -66,7 +66,7 @@ async Task RunManyParallelTasks(int qty)
     {
         myTasks[i] = DoAsyncOperation(i);
     }
-    Console.WriteLine($"All {qty} tasks was created. Waiting responses...");
+    Console.WriteLine($"All {qty} tasks created. Waiting responses...");
 
     // Waits until all parallel tasks completes
     await Task.WhenAll(myTasks);
