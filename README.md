@@ -1,3 +1,7 @@
+# C# multi-threading console .net6 app running in Docker
+
+![Project Cover](./img/project-cover.png "app running")
+ 
 # Context
 Sometimes we can call independent parallel tasks to process many things at same time.
 The program finishes when all tasks are completed.
